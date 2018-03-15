@@ -1,0 +1,67 @@
+ //image gallery effect
+
+ .gallery-page-wrapper {
+    background-color: #466675;
+    height: 100%;
+    padding: 100px;
+    header {
+       height: 10%;
+   }
+   footer {
+       height: 10%;
+   }
+}
+
+.gallery-box-wrapper {
+   padding: 20px;
+   background-color: #C8C8C8;
+   
+   & * {
+       transition: all 2s;
+   }
+   
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+ 
+
+
+   .boxes:nth-child(1) {
+       background-image: url(/assets/images/gallery/star-wars1.jpg) ;
+   }
+    .boxes:nth-child(2) {
+       background-image: url(/assets/images/gallery/star-wars7.jpg) ;
+   }
+    .boxes:nth-child(3) {
+       background-image: url(/assets/images/gallery/star-wars3.jpg) ;
+   }
+    .boxes:nth-child(4) {
+       background-image: url(/assets/images/gallery/star-wars4.jpg) ;
+   }
+    .boxes:nth-child(5) {
+       background-image: url(/assets/images/gallery/star-wars5.jpg) ;
+   }
+    .boxes:nth-child(6) {
+       background-image: url(/assets/images/gallery/star-wars6.jpg) ;
+   }
+   
+   
+   .boxes {
+       flex:1;
+       background-position-x: center;
+       background-position-y: center;    
+       
+       transform:scale(0.6);
+    background-color: #466675;
+    border: 1px solid ;
+      
+   }
+   
+   .boxes:focus {
+       flex:30;
+       transform: scale(1.0);
+       //background-size: 100%;
+   }      
+}
+

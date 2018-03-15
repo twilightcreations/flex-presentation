@@ -1,0 +1,27 @@
+//holding page
+
+.holding-page {
+    .holding-block {
+        $past1: darken(#ACC7DC, 30);
+
+        & * {
+            transition: all 0.5s;
+        }
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #cdcdcc;
+        
+        .item {
+            //border: 1px solid red;
+            box-shadow: 0 0px 0px #555;
+            transition: all 1s ease-in;
+            padding: 40px;
+            &.added {
+               box-shadow: 0 20px 50px #888;
+            }
+        }
+
+    }
+}

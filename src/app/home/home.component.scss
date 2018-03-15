@@ -1,0 +1,20 @@
+//homepage
+.home-block {
+    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .item {
+        text-align: center;
+        ul {
+            padding: 0px;
+            margin: 0;
+        }
+        li{
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        }
+    }
+}
