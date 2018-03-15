@@ -9,6 +9,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { StickyFooterComponent } from './sticky-footer/sticky-footer.component';
 import { HoldingPageComponent } from './holding-page/holding-page.component';
+import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HoldingPageComponent } from './holding-page/holding-page.component';
     LoginPageComponent,
     ImageGalleryComponent,
     StickyFooterComponent,
-    HoldingPageComponent
+    HoldingPageComponent,
+    FlexSlidePageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { HoldingPageComponent } from './holding-page/holding-page.component';
       { path: 'image-gallery', component: ImageGalleryComponent },
       { path: 'sticky-footer', component: StickyFooterComponent },
       { path: 'holding-page', component: HoldingPageComponent },
+      { path: 'flex-slide-page', component: FlexSlidePageComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
