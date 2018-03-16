@@ -15,38 +15,45 @@
     height: 100%;
     border: 1px solid black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-   .boxes {
+   .box {
        background-position-x: center;
        background-position-y: center;    
        background-color: #466675;
-       min-width: 50px;
+       min-height: 50px;
+       h1 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top:16px;
+
+       }
+
    }
-   .boxes:nth-child(1) {
+   .box:nth-child(1) {
        background-color: #D2ACD1;
     }
-   .boxes:nth-child(2) {
+   .box:nth-child(2) {
        background-color: #8C759F;
     }
-   .boxes:nth-child(3) {
+   .box:nth-child(3) {
        background-color: #C587AE;
     }
-   .boxes:nth-child(4) {
+   .box:nth-child(4) {
        background-color: #F5B8C7;
     }
-   .boxes:nth-child(5) {
+   .box:nth-child(5) {
        background-color: #FBCDBE;
     }
 
-   .boxes:focus {
+   .box.open {
        flex:1;
        //background-size: 100%;
    }      
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .flex-slide-box-wrapper {
         background-color: #C8C8C8;
         
@@ -57,33 +64,56 @@
          height: 100%;
          border: 1px solid black;
          display: flex;
-         flex-direction: column;
+         flex-direction: row;
      
-        .boxes {
+        .box {
             background-position-x: center;
             background-position-y: center;    
             background-color: #466675;
-            min-height: 50px;
+            max-width: 50px;
+            min-width: 50px;
+            //overflow: hidden;
+            position: relative;
+            h1 {
+                transition:transform 1s;
+                position:absolute;
+                transform-origin: bottom left;
+                bottom:10px;
+                transform: rotate(-90deg);
+                left:36px;
+                width:500px;
+                font-size: 20px;
+
+            }
         }
-        .boxes:nth-child(1) {
+        .box:nth-child(1) {
             background-color: #D2ACD1;
          }
-        .boxes:nth-child(2) {
+        .box:nth-child(2) {
             background-color: #8C759F;
          }
-        .boxes:nth-child(3) {
+        .box:nth-child(3) {
             background-color: #C587AE;
          }
-        .boxes:nth-child(4) {
+        .box:nth-child(4) {
             background-color: #F5B8C7;
          }
-        .boxes:nth-child(5) {
+        .box:nth-child(5) {
             background-color: #FBCDBE;
          }
      
-        .boxes:focus {
+        .box.open {
             flex:1;
+            max-width: 100%;
             //background-size: 100%;
+            h1 {
+                left:10px;
+                top:10px;
+                transform: rotate(0deg);
+                transform-origin: top center;
+                font-size: 28px;
+
+            }
         }      
      }
      

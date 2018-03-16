@@ -26,7 +26,21 @@
       };
       setTimeout(explode, 2000);
   
+      
+      //the flex box page
+      
+      $(".flex-slide-box-wrapper .box").on('click', function(){
+
+        $(".flex-slide-box-wrapper .box").removeClass('open');
+        $(this).addClass('open');
+
+      })
+      
       });
+
+
+
+
     </script>
 </body>
 </html>
