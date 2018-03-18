@@ -10,6 +10,8 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { StickyFooterComponent } from './sticky-footer/sticky-footer.component';
 import { HoldingPageComponent } from './holding-page/holding-page.component';
 import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.component';
+import { SingleProductComponent } from './single-product/single-product.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.compon
     ImageGalleryComponent,
     StickyFooterComponent,
     HoldingPageComponent,
-    FlexSlidePageComponent
+    FlexSlidePageComponent,
+    SingleProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.compon
       { path: 'sticky-footer', component: StickyFooterComponent },
       { path: 'holding-page', component: HoldingPageComponent },
       { path: 'flex-slide-page', component: FlexSlidePageComponent },
+      { path: 'product-list', component: ProductListComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
