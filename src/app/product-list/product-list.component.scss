@@ -1,4 +1,13 @@
+.products,
+.products * {
+    transition: all 1s;
+}
 
+.products {
+    app-single-product {
+        margin: 10px;
+    }
+}
 
 
 @media screen and (min-width: 700px) {
@@ -6,6 +15,10 @@
     .products {
         display:flex;
         flex-wrap: wrap;
+        justify-content: center;
+        app-single-product {
+            flex: 0 1 430px;
+        }
     }
 
 }
