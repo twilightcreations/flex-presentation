@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HoldingPageComponent implements OnInit {
 
+  jsfloat: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.jsfloat = true;
+    }, 2000);
   }
 
 }
