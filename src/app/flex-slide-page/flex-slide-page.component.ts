@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FlexSlidePageComponent implements OnInit {
 
   public pageConstructs = [
-    { id: 1, open: false, heading: 'Welcome to the site', image: '/assets/images/logo.png' },
-    { id: 2, open: false, heading: 'Welcome to the site2', image: '/assets/images/logo.png' },
-    { id: 3, open: false, heading: 'Welcome to the site3', image: '/assets/images/logo.png' },
-    { id: 4, open: false, heading: 'Welcome to the site4', image: '/assets/images/logo.png' },
-    { id: 5, open: false, heading: 'Welcome to the site5', image: '/assets/images/logo.png' },
+    { id: 1, open: false, heading: 'Welcome to the Homepage', image: '/assets/images/logo.png' },
+    { id: 2, open: false, heading: 'About Us', image: '/assets/images/logo.png' },
+    { id: 3, open: false, heading: 'Our Services', image: '/assets/images/logo.png' },
+    { id: 4, open: false, heading: 'Our Team', image: '/assets/images/logo.png' },
+    { id: 5, open: false, heading: 'Contact Us', image: '/assets/images/logo.png' },
   ];
   constructor() { }
 
