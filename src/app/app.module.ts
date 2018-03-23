@@ -12,6 +12,7 @@ import { HoldingPageComponent } from './holding-page/holding-page.component';
 import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     HoldingPageComponent,
     FlexSlidePageComponent,
     SingleProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       { path: 'holding-page', component: HoldingPageComponent },
       { path: 'flex-slide-page', component: FlexSlidePageComponent },
       { path: 'product-list', component: ProductListComponent },
+      { path: 'main-menu', component: MainMenuComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
