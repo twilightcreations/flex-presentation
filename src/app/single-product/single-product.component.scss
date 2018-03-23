@@ -1,9 +1,9 @@
-.single-product-wrapper,
-.single-product-wrapper * {
+.single-product-inner-wrapper,
+.single-product-inner-wrapper * {
     transition: all 1s;
 } 
 
-.single-product-wrapper {
+.single-product-inner-wrapper {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 1000px) {
 
-    .single-product-wrapper {
+    .single-product-inner-wrapper {
         flex-direction: row;
         .prod-image {
             img {

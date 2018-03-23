@@ -20,11 +20,11 @@ export class FlexSlidePageComponent implements OnInit {
   }
 
   toggleActive(id) {
-    this.pageConstructs.forEach(page => {
-      if (page.id === id) {
-        page.open = true;
+    this.pageConstructs.forEach(pageCon => {
+      if (pageCon.id === id) {
+        pageCon.open = true;
       } else {
-        page.open = false;
+        pageCon.open = false;
       }
     });
   }

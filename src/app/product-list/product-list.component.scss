@@ -4,7 +4,7 @@
 }
 
 .products {
-    app-single-product {
+    .single-product-wrapper {
         margin: 10px;
     }
 }
@@ -16,7 +16,7 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        app-single-product {
+        .single-product-wrapper {
             flex: 0 1 430px;
         }
     }
