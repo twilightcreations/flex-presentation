@@ -13,6 +13,7 @@ import { FlexSlidePageComponent } from './flex-slide-page/flex-slide-page.compon
 import { SingleProductComponent } from './single-product/single-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { ClickEventComponent } from './click-event/click-event.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     FlexSlidePageComponent,
     SingleProductComponent,
     ProductListComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    ClickEventComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
       { path: 'flex-slide-page', component: FlexSlidePageComponent },
       { path: 'product-list', component: ProductListComponent },
       { path: 'main-menu', component: MainMenuComponent },
+      { path: 'click-event', component: ClickEventComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
