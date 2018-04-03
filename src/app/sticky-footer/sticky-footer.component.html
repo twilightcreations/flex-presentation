@@ -4,28 +4,27 @@
             <img src="/assets/images/logo.png" alt="">
       </div>
   </header>
-  <main>
+  <main [ngClass]="status ? 'flex-engaged' : ''">
       <div class="inner-page  text-center">
         <h2>Welcome to the website</h2>  
         <p>
           Magni esse aperiam totam doloremque iure quas accusantium earum itaque laborum sunt! Possimus quidem aliquam quam
           adipisci inventore suscipit ducimus! Soluta laboriosam veniam commodi, sequi maxptas cumque accusamus explicabo
           consequuntur nihil temporibus aspernatur qui quaerat iste optio tempore doloremque maiores atque quo quibusdam
-          voluptatem? Ducimus quam laborum, magnam facere ut est temporibus doloremque deleniti pariatur praesentium
-          in corrupti laudantium voluptatem ipsa. Modi impedit adipisci deleniti ipsa in rerum ab fugiat amet recusandae!
-          Beatae autem commodi sequi laudantium quam, tempora necessitatibus saepe porro veniam numquam possimus dolorem
-          ullam eaque molestiae minus corporis alias dignissimos doloremque cum velit quo quis incidunt quia unde!
-          Nam ipsum sint unde debitis, alias voluptatum officiis praesentium tenetur necessitatibus libero in aut nisi
-          exercitationem neque a, esse distinctio fuga, enim aliquam atque animi. Porro quis mollitia nostrum ratione
-          molestias veritatis dignissimos dolores voluptatibus veniam omnis? Est expedita magni nisi animi fugit, quidem,
-          dicta sapiente repellendus tempore consectetur itaque nemo, nulla consequatur! Soluta quo excepturi eum vel!
-          Earum veniam minima ratione voluptatum?
+          voluptatem?
         </p>
+        <p>
+          Magni esse aperiam totam doloremque iure quas accusantium earum itaque laborum sunt! qui quaerat iste optio tempore doloremque maiores atque quo quibusdam
+          voluptatem? <span (click)="status=!status">[Engage flex] </span> 
+          <span (click)="moreText=!moreText"> [Generate Text]</span> 
+        </p>
+        <p [ngClass]="moreText ? 'remove-content' : ''">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum minima asperiores voluptatum ab quisquam. Eveniet eligendi fugit assumenda consequatur, rem quis vero quos repellendus deserunt eos perspiciatis cumque minus accusamus tempore! Sit fugiat nostrum ullam odio quam illum provident deleniti, inventore fuga deserunt eveniet tempore. Quisquam quasi aperiam consequuntur magni at beatae nisi minima, voluptate, id dolorum recusandae delectus quibusdam illum libero cumque suscipit? Sunt voluptatem vel numquam magni, incidunt beatae, perferendis autem exercitationem aut voluptas quisquam earum iste mollitia natus et. Illum error suscipit qui quos, pariatur ex vero iusto accusantium ducimus repellat aliquid ad molestiae corporis soluta facere earum excepturi autem quaerat hic quae labore laborum facilis amet natus? Dolorum accusantium ipsam itaque suscipit molestias, autem quas commodi omnis voluptas sequi vitae voluptate eaque eos voluptatum numquam veritatis. Excepturi quia eaque, at dolorum natus laudantium sit maiores amet ipsam. Commodi dolorem harum provident nulla suscipit, praesentium, sit explicabo omnis minima quis adipisci vitae eum quasi et minus? Quisquam obcaecati aspernatur odio animi eos dicta, natus tenetur labore veritatis cum atque. Illo dolor sit odit voluptatibus. Commodi expedita consectetur fuga debitis cupiditate facilis asperiores qui? Enim ipsum consequuntur facilis debitis iure? Aspernatur, perspiciatis voluptatem! Doloribus animi similique obcaecati. Quo modi libero dignissimos deleniti optio. Consectetur dolorem, nam voluptates optio id dolores. Ab perferendis quaerat dolore eligendi, quis, ullam tempore fuga quisquam sed, hic harum. Quisquam beatae voluptas omnis architecto repellendus, earum quae commodi tempore minima error maxime accusamus nisi odio impedit excepturi quam accusantium quia itaque voluptatum obcaecati maiores esse. Odit ipsa deserunt unde veritatis eos suscipit voluptatum dolorem! Provident minus, libero distinctio inventore officiis, possimus vero accusantium exercitationem eius est at voluptatum officia ut quidem quos suscipit facilis fuga, illo quod ipsum nisi! Tenetur assumenda animi perspiciatis facilis quasi nulla dignissimos odit adipisci saepe tempore harum mollitia eveniet cumque sapiente quo, qui repudiandae corrupti vero iusto vel temporibus, veniam quis magni. Deserunt exercitationem expedita odit saepe quos corporis culpa fugit, nesciunt voluptas quas quae neque nobis tenetur modi distinctio veniam ipsum nam iste cumque provident nemo in? Praesentium velit optio minus architecto reprehenderit id totam, accusantium a suscipit doloremque cupiditate? At doloribus dignissimos distinctio impedit, aliquam nesciunt cupiditate autem voluptate ex! Eos voluptas delectus ullam deleniti illo cum ut! Officia nemo excepturi qui quod voluptatum a soluta laudantium doloribus. Error quos beatae repellendus ipsum ab enim aut. Numquam quod animi distinctio autem quasi dolor illum a. Tempore, ipsa.</p>
         </div>
   </main>
   <footer>
       <div class="inner-page  text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ipsum distinctio vero a incidunt
+          <p>Footer</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
   </footer>
 </div>

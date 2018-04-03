@@ -21,10 +21,16 @@
     main {
         min-height: 100px;
         background-color: #F6CFB2;
-        flex:1;
+        transition: all 2s;
+        &.flex-engaged {
+            flex:1;
+        }
     }
     footer {
         min-height: 100px;
         background-color: #E8E8E8;
+    }
+    .remove-content {
+        display: none;
     }
 }

@@ -26,7 +26,8 @@
             }
             &.item-clicked {
                 box-shadow: 0 30px 100px #888;
-                background: white;
+                transition: all 3s, box-shadow 1s 3s; 
+                //background: white;
                 transform: rotate(0deg);
                 opacity: 1;
                 h1 {
