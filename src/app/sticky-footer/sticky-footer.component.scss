@@ -30,7 +30,13 @@
         min-height: 100px;
         background-color: #E8E8E8;
     }
-    .remove-content {
-        display: none;
+    .additional-text {
+        transition: all 1s;
+        max-height:1000px;
+        overflow: hidden;
+        &.remove-content {
+            max-height:0;
+        }
     }
+
 }
