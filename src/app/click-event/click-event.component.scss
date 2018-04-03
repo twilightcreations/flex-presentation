@@ -16,11 +16,22 @@
         .item {
             //border: 1px solid red;
             box-shadow: 0 0px 0px #555;
-            transition: all 1s ease-in;
+            transition: all 2s ease-in 2s;
             padding: 40px;
+            transform: rotate(45deg);
+            opacity: 0.1;
+            h1 {
+                font-size: 180px !important;
+                transition: all 3s;
+            }
             &.item-clicked {
-               box-shadow: 0 30px 100px #888;
-               background: white;
+                box-shadow: 0 30px 100px #888;
+                background: white;
+                transform: rotate(0deg);
+                opacity: 1;
+                h1 {
+                    font-size: 40px !important;
+                }
             }
         }
 

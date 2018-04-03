@@ -14,6 +14,7 @@ import { SingleProductComponent } from './single-product/single-product.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { ClickEventComponent } from './click-event/click-event.component';
+import { ClickMultiRegionComponent } from './click-multi-region/click-multi-region.component';
 
 
 @NgModule({
