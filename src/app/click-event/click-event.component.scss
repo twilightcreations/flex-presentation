@@ -38,3 +38,56 @@
 
     }
 }
+
+.search {
+    padding: 20px;
+    display: flex;
+    height: 80px;
+    max-width: 600px;
+    margin: auto;
+    select, input, button {
+        border:1px solid #ccc;
+    }
+    select {
+        border-radius: 8px 0 0 8px;
+        border-right:0px solid #ccc;
+        width: 56px;
+        padding: 5px;
+    }
+    input {
+        padding:5px;
+        flex:1;
+    }
+    button {
+        border-radius: 0 8px 8px 0;
+        width: 40px;
+        border-left:0px solid #ccc;
+        //text-indent: -10000px;
+    }
+}
+
+.counter {
+    padding: 20px;
+    display: flex;
+    height: 80px;
+    max-width: 80px;
+    margin: auto;
+    select, input, button {
+        border:1px solid #ccc;
+    }
+    input {
+        padding:5px;
+        flex:1;
+        width: 60px;
+    }
+    button.plus {
+        border-radius:  8px 0 0 8px;
+        width: 50px;
+        border-left:0px solid #ccc;
+    }
+    button.minus {
+        border-radius: 0 8px 8px 0;
+        width: 60px;
+        border-left:0px solid #ccc;
+    }
+}

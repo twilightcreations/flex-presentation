@@ -1,10 +1,31 @@
 <div class="holding-page">
 
-  <div class="holding-block">
+    <div class="search">
+        <select name="" id="">
+            <option value="">All</option>
+            <option value="">Apple</option>
+            <option value="">Android</option>
+            <option value="">Windows</option>
+        </select>
+        <input type="text">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="counter">
+            <button class="plus"><i class="fa fa-minus"></i></button>
+            <input type="text">
+            <button class="minus"><i class="fa fa-plus"></i></button>
+        </div>
+
+
+    <div class="holding-block">
       <div class="item" [ngClass]="status ? 'item-clicked' : ''" (click)="status=!status">
           <h1>Click me</h1>
       </div>
+
   </div>
+
+
 
 
 </div>
