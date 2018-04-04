@@ -14,6 +14,7 @@ import { SingleProductComponent } from './single-product/single-product.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { ClickEventComponent } from './click-event/click-event.component';
+import { FormElementsComponent } from './form-elements/form-elements.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ClickEventComponent } from './click-event/click-event.component';
     SingleProductComponent,
     ProductListComponent,
     MainMenuComponent,
-    ClickEventComponent
+    ClickEventComponent,
+    FormElementsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { ClickEventComponent } from './click-event/click-event.component';
       { path: 'product-list', component: ProductListComponent },
       { path: 'main-menu', component: MainMenuComponent },
       { path: 'click-event', component: ClickEventComponent },
+      { path: 'form-elements', component: FormElementsComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
