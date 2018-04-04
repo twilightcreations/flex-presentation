@@ -15,6 +15,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { ClickEventComponent } from './click-event/click-event.component';
 import { FormElementsComponent } from './form-elements/form-elements.component';
+import { VideoBackgroundComponent } from './video-background/video-background.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FormElementsComponent } from './form-elements/form-elements.component';
     ProductListComponent,
     MainMenuComponent,
     ClickEventComponent,
-    FormElementsComponent
+    FormElementsComponent,
+    VideoBackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,7 @@ import { FormElementsComponent } from './form-elements/form-elements.component';
       { path: 'main-menu', component: MainMenuComponent },
       { path: 'click-event', component: ClickEventComponent },
       { path: 'form-elements', component: FormElementsComponent },
+      { path: 'video-background', component: VideoBackgroundComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])

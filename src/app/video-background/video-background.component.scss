@@ -1,0 +1,121 @@
+//holding page
+
+.video-background {
+    .holding-block {
+        $past1: darken(#ACC7DC, 30);
+        background-position-x: 50%;
+        background-position-y: 50%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        padding:20px;
+        img {
+            width:80%;
+            opacity: 1;
+        }
+        
+        .item {
+            width:100%;
+            max-width:600px;
+        }
+
+    }
+}
+
+.others {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color:#666;
+}
+
+
+.search {
+    padding: 20px;
+    display: flex;
+    height: 85px;
+    margin: auto;
+    select, input, button {
+        border:1px solid #ccc;
+        opacity:0.7;
+    }
+    select {
+        border-radius: 8px 0 0 8px;
+        border-right:0px solid #ccc;
+        width: 60px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    input {
+        padding:5px;
+        flex:1;
+        min-width: 0;
+    }
+    button {
+        border-radius: 0 8px 8px 0;
+        width: 40px;
+        border-left:0px solid #ccc;
+        //text-indent: -10000px;
+    }
+}
+
+.counter {
+    padding: 20px;
+    display: flex;
+    height: 80px;
+    max-width: 168px;
+    margin: auto;
+    select, input, button {
+        border:1px solid #ccc;
+    }
+    input {
+        padding:5px;
+        flex:1;
+        width: 60px;
+    }
+    button.plus {
+        border-radius:  8px 0 0 8px;
+        width: 50px;
+        border-left:0px solid #ccc;
+    }
+    button.minus {
+        border-radius: 0 8px 8px 0;
+        width: 60px;
+        border-left:0px solid #ccc;
+    }
+}
+
+
+.search2 {
+    max-height: 0;
+    padding:0;
+    overflow: hidden;
+    transition: all 1s;
+    &.showing {
+        max-height: 1000px;
+        padding: 20px;
+    }
+}
+.counter {
+    max-height: 0;
+    overflow: hidden;
+    padding:0;
+    transition: all 1s;
+    &.showing {
+        max-height: 1000px;
+        padding:20px;
+    }
+}
+
+
+.vid {
+    width:100%;
+    position: absolute;
+    z-index: -1000;
+}
+.vid.selected {
+    z-index: -999;
+
+}

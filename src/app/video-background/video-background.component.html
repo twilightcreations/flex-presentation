@@ -1,0 +1,48 @@
+
+<div class="video-background">
+  
+  <!-- <video class="vid " src="/assets/v/one.mp4" loop  autoplay ></video>
+  <video class="vid " src="/assets/v/four.mp4" loop  autoplay ></video> -->
+  <video class="vid" src="/assets/v/three.mp4" loop  autoplay ></video>
+  
+  <div class="holding-block">
+      <div class="item">
+      <img src="/assets/images/logo-black.png" alt="">
+        <div class="search">
+          <select name="" id="">
+            <option value="">All</option>
+            <option value="">Apple</option>
+            <option value="">Android</option>
+            <option value="">Windows</option>
+          </select>
+          <input type="text">
+          <button>
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="others">
+          <span class="one" (click)="status=!status">one</span> - <span class="two" (click)="status=!status">two</span>
+        </div>
+         
+        <div class="search search2 " [ngClass]="status ? 'showing' : ''">
+          <input type="text">
+          <button>
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+          <div class="counter" [ngClass]="status ? 'showing' : ''">
+            <button class="plus">
+              <i class="fa fa-minus"></i>
+            </button>
+            <input type="text">
+            <button class="minus">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+
