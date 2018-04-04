@@ -7,10 +7,15 @@
     .boxes {
         display:flex;
         min-height:250px;
-        border:1px solid #C2D8EB;
+        border:1px solid #ccc;
         padding:0px;
         margin-top: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 180px;
+        background: lighten(#ccc, 13);
+
+        &.box-flat {
+            min-height: auto;
+        }
         .box {
             margin:4px;
             border:1px solid #BED0F5;
