@@ -1,0 +1,19 @@
+
+
+    .menu-content {
+        padding: 0;
+        padding-top: 150px;
+    }
+    .menu-content li {
+        list-style: none;
+        margin-bottom: 3px;
+        a {
+            display:block;
+            height:100%;
+            border-bottom:1px solid #666;
+            color: white;
+            padding: 9px 9px 13px 25px;
+            font-size: 17px;
+            
+        }
+    }
