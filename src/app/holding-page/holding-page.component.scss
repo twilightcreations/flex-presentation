@@ -17,11 +17,28 @@
             //border: 1px solid red;
             box-shadow: 0 0px 0px #555;
             transition: all 1s ease-in;
-            padding: 40px;
+            padding: 30px;
             &.js-added {
-               box-shadow: 0 20px 50px #888;
+                box-shadow: 0 20px 50px #888;
             }
         }
 
+    }
+    .contact-wrapper{
+        max-width: 600px;
+        padding-top: 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 7.5s ease-in;
+        &.open {
+            max-height: 400px;
+            padding-top: 40px;
+        }
+    }
+    .form-check {
+        position: relative !important;
+    }
+    .form-check-input {
+        margin-left: 0;
     }
 }
