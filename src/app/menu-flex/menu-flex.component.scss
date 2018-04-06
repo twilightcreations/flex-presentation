@@ -17,6 +17,7 @@
     width:0;
     transition: all 1s ;
     background-color: #464a4c;
+    overflow: hidden;
     &.open {
         width:300px;       
     }
