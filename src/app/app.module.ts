@@ -18,6 +18,7 @@ import { FormElementsComponent } from './form-elements/form-elements.component';
 import { VideoBackgroundComponent } from './video-background/video-background.component';
 import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
 import { SlideMenuContentsComponent } from './slide-menu-contents/slide-menu-contents.component';
+import { MenuFlexComponent } from './menu-flex/menu-flex.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { SlideMenuContentsComponent } from './slide-menu-contents/slide-menu-con
     FormElementsComponent,
     VideoBackgroundComponent,
     SlideInMenuComponent,
-    SlideMenuContentsComponent
+    SlideMenuContentsComponent,
+    MenuFlexComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { SlideMenuContentsComponent } from './slide-menu-contents/slide-menu-con
       { path: 'form-elements', component: FormElementsComponent },
       { path: 'video-background', component: VideoBackgroundComponent },
       { path: 'slide-in-menu', component: SlideInMenuComponent },
+      { path: 'menu-flex', component: MenuFlexComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])

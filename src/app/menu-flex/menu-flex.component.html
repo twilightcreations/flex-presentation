@@ -1,0 +1,42 @@
+
+<div class="overall-wrapper">
+
+    <div class="menu-container" [ngClass]="mnuStatus ? 'open':''">
+        <app-slide-menu-contents></app-slide-menu-contents>
+      </div>
+      
+
+
+
+  <div class="content-container">
+    <header>
+        <div class="menu-toggle-wrapper" (click)="mnuStatus=!mnuStatus">
+            <i class="fa fa-bars"></i>
+          </div>
+      <div class="inner-page text-center">
+        <img src="/assets/images/logo.png" alt="">
+      </div>
+    </header>
+    <main>
+      <div class="inner-page  text-center">
+        <h2>Welcome to the website</h2>
+        <p>
+          Magni esse aperiam totam doloremque iure quas accusantium earum itaque laborum sunt! Possimus quidem aliquam quam adipisci
+          inventore suscipit ducimus! Soluta laboriosam veniam commodi, sequi maxptas cumque accusamus explicabo consequuntur
+          nihil temporibus aspernatur qui quaerat iste optio tempore doloremque maiores atque quo quibusdam voluptatem?
+        </p>
+        <p>
+          Magni esse aperiam totam doloremque iure quas accusantium earum itaque laborum sunt! qui quaerat iste optio tempore doloremque
+          maiores atque quo quibusdam voluptatem? Magni esse aperiam totam doloremque iure quas accusantium earum itaque
+          laborum sunt! qui quaerat iste optio tempore doloremque maiores atque quo quibusdam voluptatem?
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="inner-page  text-center">
+        <p>Footer</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </footer>
+  </div>
+</div>
