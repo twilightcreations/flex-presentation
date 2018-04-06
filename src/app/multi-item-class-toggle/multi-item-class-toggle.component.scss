@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    .item {
+        border:1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        &:hover {
+            cursor: pointer;
+        }
+        &.open {
+            border:1px solid red;
+            color: red;
+            text-decoration: underline;
+        }
+    }
+}

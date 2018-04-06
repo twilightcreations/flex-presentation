@@ -19,6 +19,8 @@ import { VideoBackgroundComponent } from './video-background/video-background.co
 import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
 import { SlideMenuContentsComponent } from './slide-menu-contents/slide-menu-contents.component';
 import { MenuFlexComponent } from './menu-flex/menu-flex.component';
+import { SimpleDataComponent } from './simple-data/simple-data.component';
+import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-item-class-toggle.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { MenuFlexComponent } from './menu-flex/menu-flex.component';
     VideoBackgroundComponent,
     SlideInMenuComponent,
     SlideMenuContentsComponent,
-    MenuFlexComponent
+    MenuFlexComponent,
+    SimpleDataComponent,
+    MultiItemClassToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +61,8 @@ import { MenuFlexComponent } from './menu-flex/menu-flex.component';
       { path: 'video-background', component: VideoBackgroundComponent },
       { path: 'slide-in-menu', component: SlideInMenuComponent },
       { path: 'menu-flex', component: MenuFlexComponent },
+      { path: 'simple-data', component: SimpleDataComponent },
+      { path: 'multi-item-class-toggle', component: MultiItemClassToggleComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])

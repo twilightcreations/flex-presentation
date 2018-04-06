@@ -10,7 +10,6 @@
     flex-direction: column;
     display:flex;
     .prod-image {
-
         img {
             max-width: 260px;
             padding-top:20px;
@@ -19,13 +18,13 @@
     }
     .details {
         h3 {
-            font-size: 26px;
+            font-size: 20px;
             color: #020202;
         }
         .content {
         }
         .prod-price {
-            font-size: 22px;
+            font-size: 18px;
         }
     }
 }
@@ -36,9 +35,10 @@
     .single-product-inner-wrapper {
         flex-direction: row;
         .prod-image {
+            padding:10px;
             img {
                 padding-top:40px;
-                width:160px;
+                width:120px;
             }
         }
         .details {

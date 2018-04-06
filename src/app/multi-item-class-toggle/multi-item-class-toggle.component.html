@@ -1,0 +1,5 @@
+<div class="multi-class-wrapper">
+  <div class="box">
+    <div *ngFor="let planet of planets"  class="item" (click)="togglePlanetClass(planet.id)" [class.open]="planet.open" >{{planet.name}}</div>
+  </div>
+</div>

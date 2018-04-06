@@ -28,4 +28,6 @@ export class FlexSlidePageComponent implements OnInit {
       }
     });
   }
+
+  
 }
