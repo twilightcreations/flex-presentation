@@ -21,6 +21,7 @@ import { SlideMenuContentsComponent } from './slide-menu-contents/slide-menu-con
 import { MenuFlexComponent } from './menu-flex/menu-flex.component';
 import { SimpleDataComponent } from './simple-data/simple-data.component';
 import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-item-class-toggle.component';
+import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-i
     SlideMenuContentsComponent,
     MenuFlexComponent,
     SimpleDataComponent,
-    MultiItemClassToggleComponent
+    MultiItemClassToggleComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,7 @@ import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-i
       { path: 'menu-flex', component: MenuFlexComponent },
       { path: 'simple-data', component: SimpleDataComponent },
       { path: 'multi-item-class-toggle', component: MultiItemClassToggleComponent },
+      { path: 'to-do-list', component: ToDoListComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
