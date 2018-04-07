@@ -25,8 +25,19 @@ export class ToDoListComponent implements OnInit {
   
   itemClicked(){
     var theData = ((document.getElementById("item-to-add") as HTMLInputElement).value);
-    //this.thingsToDo.push(    { id: 7, thing:"parm just added this car" });
+    //i need to understand how to add a unique id or increment it by 
     this.thingsToDo.push(    { id: 7, thing:theData });
+    (document.getElementById("item-to-add") as HTMLInputElement).value = "";
+    document.getElementById("item-to-add").focus();
   }
+
+  editItem(id){
+    alert("edit item with id: "+id); 
+  }
+
+  removeItem(id){
+    alert("remove item with the following id: " + id); 
+  }
+
 
 }
