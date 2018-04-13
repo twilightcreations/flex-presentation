@@ -17,7 +17,8 @@ export class TodoItemComponent implements OnInit {
   }
 
   editTodo(item) {
-    this.editItem.emit(item)
+    this.editItem.emit(item);
+    item.editing = false;
   }
 
   removeItem(id) {

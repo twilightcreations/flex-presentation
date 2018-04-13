@@ -29,9 +29,10 @@ export class ToDoListComponent implements OnInit {
   }
 
   itemClicked() {
+
     var theData = ((document.getElementById("item-to-add") as HTMLInputElement).value);
     //i need to understand how to add a unique id or increment it by 
-    this.thingsToDo.push({ id: 7, thing: theData });
+    this.thingsToDo.push({ id: 9, thing: theData });
     (document.getElementById("item-to-add") as HTMLInputElement).value = "";
     document.getElementById("item-to-add").focus();
   }

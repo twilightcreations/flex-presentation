@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BasicConstructsComponent } from './basic-constructs/basic-constructs.component';
@@ -51,6 +52,7 @@ import { TodoItemComponent } from './to-do-list/todo-item/todo-item.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'basic-constructs', component: BasicConstructsComponent },
       { path: 'login-page', component: LoginPageComponent },
