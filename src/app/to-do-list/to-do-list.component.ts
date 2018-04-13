@@ -25,7 +25,7 @@ export class ToDoListComponent implements OnInit {
       { id: 6, thing: "Order the new speaker" },
       { id: 7, thing: "Look for the new car" },
       { id: 8, thing: "Make some time on Sunday mornings" }
-    ]).delay(1000).subscribe(items => this.thingsToDo = items);
+    ]).delay(3000).subscribe(items => this.thingsToDo = items);
   }
 
   itemClicked() {
@@ -40,6 +40,7 @@ export class ToDoListComponent implements OnInit {
   deleteItem(id) {
     this.thingsToDo = this.thingsToDo.filter(x => x.id !== id);
   }
+
 
   editItem(item) {
     var index = this.thingsToDo.findIndex(x => x.id === item.id);

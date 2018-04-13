@@ -24,6 +24,7 @@ import { SimpleDataComponent } from './simple-data/simple-data.component';
 import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-item-class-toggle.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { TodoItemComponent } from './to-do-list/todo-item/todo-item.component';
+import { PreLoaderComponent } from './pre-loader/pre-loader.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { TodoItemComponent } from './to-do-list/todo-item/todo-item.component';
     SimpleDataComponent,
     MultiItemClassToggleComponent,
     ToDoListComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    PreLoaderComponent
   ],
   imports: [
     BrowserModule,

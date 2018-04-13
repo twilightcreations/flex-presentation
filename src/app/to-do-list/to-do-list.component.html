@@ -1,7 +1,5 @@
 <div class="to-do-list">
   <h1>To Do List</h1>
-
-
   <div class="add-control-wrapper">
     <input id="item-to-add" type="text" value="parm">
     <button (click)="itemClicked()">+</button>
@@ -11,7 +9,7 @@
     <div class="item" app-todo-item [toDoItem]="toDo" (deleteItem)="deleteItem($event)" (editItem)="editItem($event)"></div>
   </div>
   <div *ngIf="!thingsToDo">
-    <h1>Loading...</h1>
+    <app-pre-loader></app-pre-loader>
   </div>
 
 </div>
