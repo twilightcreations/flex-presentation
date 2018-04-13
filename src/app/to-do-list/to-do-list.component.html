@@ -7,6 +7,11 @@
     <button (click)="itemClicked()">+</button>
   </div>
 
-  <div class="item" *ngFor="let toDo of thingsToDo"><span>{{toDo.thing}}</span><span (click)="removeItem(toDo.id)">[Delete]</span><span (click)="editItem(toDo.id)">[Edit]</span></div>
+  <div class="item" *ngFor="let toDo of thingsToDo">
+    <app-todo-item [toDoItem]="toDo" (deleteItem)="deleteItem($event)" (editItem)="editItem($event)"></app-todo-item>
+  </div>
+  <div *ngIf="!thingsToDo">
+    <h1>Loading...</h1>
+  </div>
 
 </div>

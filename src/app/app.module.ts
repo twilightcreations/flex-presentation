@@ -22,6 +22,7 @@ import { MenuFlexComponent } from './menu-flex/menu-flex.component';
 import { SimpleDataComponent } from './simple-data/simple-data.component';
 import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-item-class-toggle.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { TodoItemComponent } from './to-do-list/todo-item/todo-item.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
     MenuFlexComponent,
     SimpleDataComponent,
     MultiItemClassToggleComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,

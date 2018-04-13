@@ -1,0 +1,5 @@
+<input *ngIf="toDoItem.editing" type="text" [value]="toDoItem.thing" (keyup.enter)="editTodo(toDoItem)">
+<span *ngIf="!toDoItem.editing">{{toDoItem.thing}}</span>
+<span class="delete-span" (click)="removeItem(toDoItem.id)">[Delete]</span>
+<span *ngIf="!toDoItem.editing" class="edit-span" (click)="toDoItem.editing = true">[Edit]</span>
+<span *ngIf="toDoItem.editing" class="edit-span" (click)="toDoItem.editing = false">[Cancel]</span>
