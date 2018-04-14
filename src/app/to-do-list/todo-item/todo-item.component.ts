@@ -21,6 +21,7 @@ export class TodoItemComponent implements OnInit {
     item.editing = false;
   }
 
+  //this function is called when delete is clicked
   removeItem(id) {
     this.deleteItem.emit(id);
   }

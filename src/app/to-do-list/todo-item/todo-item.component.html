@@ -1,6 +1,12 @@
-
-<input class="edit-todo" *ngIf="toDoItem.editing" type="text" [(ngModel)]="toDoItem.thing" (keyup.enter)="editTodo(toDoItem)">
+<!-- if in non-edit mode show the todo item as text -->
 <span class="todo" *ngIf="!toDoItem.editing">{{toDoItem.thing}}</span>
+
+<!-- when in edit mode this text box appears -->
+<input class="edit-todo" *ngIf="toDoItem.editing" type="text" [(ngModel)]="toDoItem.thing" (keyup.enter)="editTodo(toDoItem)">
+
+<!-- when delete is clicked the removeItem function is called, passing the id of the row -->
 <span class="delete-span" (click)="removeItem(toDoItem.id)">[Delete]</span>
+
+<!-- when edit is clicked the cancel appears and vice-verse -->
 <span *ngIf="!toDoItem.editing" class="edit-span" (click)="toDoItem.editing = true">[Edit]</span>
 <span *ngIf="toDoItem.editing" class="edit-span" (click)="toDoItem.editing = false">[Cancel]</span>
