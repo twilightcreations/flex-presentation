@@ -9,17 +9,18 @@
     width: 80px;
     height: 80px;
     
-    animation-name: rotate; 
+      animation-name: rotate; 
       animation-duration: 3s; 
       animation-iteration-count: infinite;
       animation-timing-function: linear;
   }
   .loader {
-    border: 1px solid #ccc;
+    border: 1px solid darken(#ccc, 20);
+    background-color: #ccc;
     position:absolute;
-    width:30px;
-    height:30px;
-    border-radius:50%;
+    width:40px;
+    height:40px;
+    //border-radius:50%;
     
       animation-name: rotateSize; 
       animation-duration: 2s; 
@@ -50,8 +51,12 @@
   }
   
   @keyframes rotateSize {
-      0% {transform: scale(1.0%);}
-      50% {transform:  scale(0.5);}
-      100% {transform:  scale(1.0);}
+      0% {transform: scale(1.0%); opacity: 0.2;}
+      50% {transform:  scale(0.5); opacity: 0.8;}
+      100% {transform:  scale(1.0); opacity: 0.2;}
   }
+  }
+
+  h4 {
+    color: #ccc;
   }
