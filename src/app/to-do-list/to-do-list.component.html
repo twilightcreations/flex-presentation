@@ -2,11 +2,15 @@
   <h1>To Do List</h1>
   <div class="add-control-wrapper">
     <input id="item-to-add" type="text" value="parm">
-    <button (click)="itemClicked()">+</button>
+    <button (click)="addItem()">+</button>
   </div>
+      <!-- error message if there is no content-->
+      <div class="error-message" *ngIf="errMessage">
+        <p>You have to enter something in order for this to add a task</p>
+      </div>
 
   <div  *ngFor="let toDo of thingsToDo">
-    <div class="item" app-todo-item [toDoItem]="toDo" (deleteItem)="deleteItem($event)" (editItem)="editItem($event)"></div>
+    <div class="item" app-todo-item [toDoItem]="toDo" (onDeleteItem)="deleteItem2($event)" (onEditItem)="editItem($event)"></div>
   </div>
   <div *ngIf="!thingsToDo">
     <app-pre-loader></app-pre-loader>

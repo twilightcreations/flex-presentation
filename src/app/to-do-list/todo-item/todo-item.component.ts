@@ -9,20 +9,20 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class TodoItemComponent implements OnInit {
 
   @Input() toDoItem;
-  @Output() deleteItem = new EventEmitter();
-  @Output() editItem = new EventEmitter();
+  @Output() onDeleteItem = new EventEmitter();
+  @Output() onEditItem = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
 
   editTodo(item) {
-    this.editItem.emit(item);
+    this.onEditItem.emit(item);
     item.editing = false;
   }
 
   //this function is called when delete is clicked
   removeItem(id) {
-    this.deleteItem.emit(id);
+    this.onDeleteItem.emit(id);
   }
 }

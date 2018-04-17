@@ -1,0 +1,7 @@
+<button (click)="back()">Back</button>
+<div>
+  {{todoItem.id + '-' + todoItem.thing}}
+
+  <input type="text" [(ngModel)]="todoItem.thing">
+  <button (click)="save(todoItem)">Save</button>
+</div>

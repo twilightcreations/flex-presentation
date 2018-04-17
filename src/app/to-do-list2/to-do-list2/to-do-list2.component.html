@@ -1,0 +1,14 @@
+<div class="to-do-list">
+  <h1>To Do List V2</h1>
+  <div class="add-control-wrapper">
+    <input id="item-to-add" type="text" value="parm">
+    <button (click)="addItem()">+</button>
+  </div>
+
+  <div *ngFor="let todo of thingsToDo">
+    {{todo.id + '-' + todo.thing}}
+    <button (click)="editItem(todo)">Edit</button>
+    <button (click)="deleteItem2(todo.id)">Delete</button>
+  </div>
+
+</div>

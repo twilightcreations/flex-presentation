@@ -50,7 +50,7 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
     MultiItemClassToggleComponent,
     ToDoListComponent,
     TodoItemComponent,
-    PreLoaderComponent
+    PreLoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +72,10 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
       { path: 'simple-data', component: SimpleDataComponent },
       { path: 'multi-item-class-toggle', component: MultiItemClassToggleComponent },
       { path: 'to-do-list', component: ToDoListComponent },
+      // this is a lazy loaded module i.e a file loaded when user navigates to to-do-list2 url
+      // This is a way to create a sub feature in an application to improve performance (by reducing the initial bundle)
+      // Also, it give encapsulation of keeping related functionality in that module
+      { path: 'to-do-list2', loadChildren: './to-do-list2/to-do-list2.module#ToDoList2Module' },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])
