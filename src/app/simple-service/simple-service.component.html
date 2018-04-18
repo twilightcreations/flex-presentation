@@ -1,0 +1,7 @@
+
+<ul >
+  <li>parm</li>
+  <li *ngFor="let colour of colours" >{{colour.color}} - {{colour.code.hex}} - <span [ngStyle]="{'color' : colour.code.hex}"> Example</span></li>
+</ul>
+
+<pre>{{colours|json}}</pre>

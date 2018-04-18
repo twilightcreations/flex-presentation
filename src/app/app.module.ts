@@ -25,6 +25,7 @@ import { MultiItemClassToggleComponent } from './multi-item-class-toggle/multi-i
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { TodoItemComponent } from './to-do-list/todo-item/todo-item.component';
 import { PreLoaderComponent } from './pre-loader/pre-loader.component';
+import { SimpleServiceComponent } from './simple-service/simple-service.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
     ToDoListComponent,
     TodoItemComponent,
     PreLoaderComponent,
+    SimpleServiceComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +74,7 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
       { path: 'simple-data', component: SimpleDataComponent },
       { path: 'multi-item-class-toggle', component: MultiItemClassToggleComponent },
       { path: 'to-do-list', component: ToDoListComponent },
+      { path: 'simple-service', component:SimpleServiceComponent },
       // this is a lazy loaded module i.e a file loaded when user navigates to to-do-list2 url
       // This is a way to create a sub feature in an application to improve performance (by reducing the initial bundle)
       // Also, it give encapsulation of keeping related functionality in that module
@@ -80,7 +83,9 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
       { path: '', component: HomeComponent }
     ])
   ],
-  providers: [],
+  providers: [
+    SimpleServiceComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
