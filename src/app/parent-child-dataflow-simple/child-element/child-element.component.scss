@@ -1,0 +1,22 @@
+$child-border-color: #A0C8FC; 
+$child-padding: 10px;
+$child-margin: 10px;
+
+.child-container {
+    text-align: center;
+    background-color: lighten(#A0C8FC, 15);
+    border:1px solid $child-border-color;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: $child-padding;
+    header {
+        border: 1px solid $child-border-color;
+        padding: $child-padding;
+        margin: $child-margin;
+    }
+    main {
+        border: 1px solid $child-border-color;
+        padding: $child-padding;
+        margin: $child-margin;
+    }
+}

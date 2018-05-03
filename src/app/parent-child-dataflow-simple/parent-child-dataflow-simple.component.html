@@ -1,7 +1,25 @@
-<p>
-  parent-child-dataflow-simple works!
-</p>
+<div class="container">
+  <div class="parent-container">
+    <h4>Simple data flow between child and parent</h4>
+    <header>
+      <p>Parent construct</p>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter Movie" id="textBox1Parent">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="updateMovie()">Button</button>
+        </div>
+      </div>
+    </header>
 
-<div>
-  <app-child-element  [hey]="childMessage" ></app-child-element>
+    <main>
+      <app-child-element (eventClick)="handleEventClicked($event)" [hey]="childMessage"></app-child-element>
+    </main>
+
+    <footer>
+      <p>Information sent back from child</p>
+      <p>
+        <strong>{{dataFromParent}}</strong>
+      </p>
+    </footer>
+  </div>
 </div>

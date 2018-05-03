@@ -1,4 +1,23 @@
-<h5>This is information coming from the parent:</h5>
-<p>
-  Information from the parent {{hey}}
-</p>
+<div class="child-container">
+  <header>
+    <h5>Child Element</h5>
+  </header>
+  <main>
+    <p>
+      Information from the parent:
+    </p>
+    <p><strong>{{hey}}</strong></p>
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter Movie" id="childInput1" >
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="childClicked()">Send to parent</button>
+        </div>
+      </div>
+
+
+  </main>
+
+</div>
+
+

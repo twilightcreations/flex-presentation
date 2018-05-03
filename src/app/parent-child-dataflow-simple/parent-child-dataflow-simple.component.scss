@@ -1,0 +1,23 @@
+$parent-border-color: #E09DFE; 
+$parent-padding: 10px;
+$parent-margin: 10px;
+.parent-container {
+    border:1px solid $parent-border-color;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: $parent-padding;
+    text-align: center;
+    h4 {
+        padding-bottom: 20px;
+    }
+    header {
+        border: 1px solid $parent-border-color;
+        padding: $parent-padding;
+        margin: $parent-margin;
+    }
+    main {
+        border: 1px solid $parent-border-color;
+        padding: $parent-padding;
+        margin: $parent-margin;
+    }
+}
