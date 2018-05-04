@@ -28,6 +28,7 @@ import { PreLoaderComponent } from './pre-loader/pre-loader.component';
 import { SimpleServiceComponent } from './simple-service/simple-service.component';
 import { ParentChildDataflowSimpleComponent } from './parent-child-dataflow-simple/parent-child-dataflow-simple.component';
 import { ChildElementComponent } from './parent-child-dataflow-simple/child-element/child-element.component';
+import { UsingNgModelComponent } from './using-ng-model/using-ng-model.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { ChildElementComponent } from './parent-child-dataflow-simple/child-elem
     SimpleServiceComponent,
     ParentChildDataflowSimpleComponent,
     ChildElementComponent,
+    UsingNgModelComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,6 +81,7 @@ import { ChildElementComponent } from './parent-child-dataflow-simple/child-elem
       { path: 'multi-item-class-toggle', component: MultiItemClassToggleComponent },
       { path: 'to-do-list', component: ToDoListComponent },
       { path: 'simple-service', component:SimpleServiceComponent },
+      { path: 'using-ng-model', component:UsingNgModelComponent },
       { path: 'parent-child-dataflow-simple', component:ParentChildDataflowSimpleComponent },
       // this is a lazy loaded module i.e a file loaded when user navigates to to-do-list2 url
       // This is a way to create a sub feature in an application to improve performance (by reducing the initial bundle)

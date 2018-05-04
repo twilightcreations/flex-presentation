@@ -6,3 +6,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
 }
+
+
+//content
+.rt-content-500 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 500px;
+    margin:20px auto 20px auto;   
+    text-align: center;
+}
+
+
+
+.rt-flatten-button {
+    border: none;
+    background: none;
+    color:darken(lightblue, 20);
+}
