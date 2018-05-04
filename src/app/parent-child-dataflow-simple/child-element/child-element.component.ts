@@ -12,6 +12,7 @@ export class ChildElementComponent implements OnInit {
   @Input() hey;
   @Output() eventClick = new EventEmitter();
   
+  private childInput: string;
 
   ngOnInit() {
   }
@@ -19,10 +20,7 @@ export class ChildElementComponent implements OnInit {
   messageForParent;
 
   childClicked() {
-    var p = document.getElementById('childInput1').value;
-    this.eventClick.emit(p);
-    
-    //console.log(this.messageForParent);
+    this.eventClick.emit(this.childInput);
   }
 
 }

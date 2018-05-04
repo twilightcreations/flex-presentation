@@ -9,7 +9,7 @@
     <p><strong>{{hey}}</strong></p>
 
     <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter Movie" id="childInput1" >
+        <input type="text" [(ngModel)]="childInput" class="form-control" placeholder="Enter Movie" >
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button" (click)="childClicked()">Send to parent</button>
         </div>

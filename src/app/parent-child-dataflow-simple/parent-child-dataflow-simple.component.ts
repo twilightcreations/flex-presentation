@@ -14,9 +14,10 @@ export class ParentChildDataflowSimpleComponent implements OnInit {
 
   childMessage = "Avengers: Infinity War";
   
+  private parentData1: string;
+
   updateMovie() {
-    var textbox1ParentValue = document.getElementById('textBox1Parent').value;
-    this.childMessage = textbox1ParentValue;
+    this.childMessage = this.parentData1;
   }
 
   dataFromParent;

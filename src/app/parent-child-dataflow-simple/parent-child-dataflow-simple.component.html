@@ -4,7 +4,7 @@
     <header>
       <p>Parent construct</p>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter Movie" id="textBox1Parent">
+        <input type="text" class="form-control" placeholder="Enter Movie" id="textBox1Parent" [(ngModel)]="parentData1">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button" (click)="updateMovie()">Button</button>
         </div>
