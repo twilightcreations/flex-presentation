@@ -29,6 +29,8 @@ import { SimpleServiceComponent } from './simple-service/simple-service.componen
 import { ParentChildDataflowSimpleComponent } from './parent-child-dataflow-simple/parent-child-dataflow-simple.component';
 import { ChildElementComponent } from './parent-child-dataflow-simple/child-element/child-element.component';
 import { UsingNgModelComponent } from './using-ng-model/using-ng-model.component';
+import { TwoWayDataComponent } from './two-way-data/two-way-data.component';
+import { ChildComponent } from './two-way-data/child/child.component';
 
 
 @NgModule({
@@ -59,6 +61,8 @@ import { UsingNgModelComponent } from './using-ng-model/using-ng-model.component
     ParentChildDataflowSimpleComponent,
     ChildElementComponent,
     UsingNgModelComponent,
+    TwoWayDataComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +91,7 @@ import { UsingNgModelComponent } from './using-ng-model/using-ng-model.component
       // This is a way to create a sub feature in an application to improve performance (by reducing the initial bundle)
       // Also, it give encapsulation of keeping related functionality in that module
       { path: 'to-do-list2', loadChildren: './to-do-list2/to-do-list2.module#ToDoList2Module' },
+      { path: 'two-way-data', component: TwoWayDataComponent },
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent }
     ])

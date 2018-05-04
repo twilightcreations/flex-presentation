@@ -1,20 +1,16 @@
 //homepage
-.home-block {
-    
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    .item {
-        text-align: center;
-        ul {
-            padding: 0px;
-            margin: 0;
-        }
-        li{
+.block {
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 10px auto;
+    li {
         list-style: none;
+        border: 1px solid #ccc;
+        margin: 10px;
         padding: 10px;
-        margin: 0;
-        }
+        flex: 0 0 220px;;
+        
     }
 }
