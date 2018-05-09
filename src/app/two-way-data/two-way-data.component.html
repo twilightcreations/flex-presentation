@@ -1,9 +1,12 @@
 
-<input type="text" name="" (keyup)="clickMe()" [(ngModel)]="txtValue">
-<br>
-<button class="rt-flatten-button" >submit</button>
-<div class="surround">
-    <app-child [ppp]="pppValue" ></app-child>
+<div class="p1">
+<input type="text" name="" (keyup)="clickMe()" [(ngModel)]="txtValue" placeholder="Send to child">
+</div>
+<div class="p2">
+<p>From child:<br /><strong>{{cccFromParent}}</strong></p>
+</div>
 
+<div class="surround">
+    <app-child [ppp]="pppValue" (ccc)="cccFunction($event)" ></app-child>
 </div>
 

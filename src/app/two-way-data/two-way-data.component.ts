@@ -16,9 +16,12 @@ export class TwoWayDataComponent implements OnInit {
     this.pppValue = this.txtValue;
   }
 
+  cccFromParent:string;
+   cccFunction(data){
+     this.cccFromParent = data;
+   } 
+
   ngOnInit() {
   }
-
-
 
 }

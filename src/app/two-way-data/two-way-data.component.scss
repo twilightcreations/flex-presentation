@@ -3,4 +3,22 @@
     height: 90vh;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.p1 {
+    border: 1px solid pink;
+    position: absolute;
+    padding: 20px;
+    margin:20px;
+    top: 0;
+    left: 0;
+}
+.p2 {
+    border: 1px solid pink;
+    position: absolute;
+    padding: 20px;
+    margin:20px;
+    bottom: 0;
+    right: 0;
 }
