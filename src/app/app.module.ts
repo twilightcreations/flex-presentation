@@ -31,6 +31,7 @@ import { ChildElementComponent } from './parent-child-dataflow-simple/child-elem
 import { UsingNgModelComponent } from './using-ng-model/using-ng-model.component';
 import { TwoWayDataComponent } from './two-way-data/two-way-data.component';
 import { ChildComponent } from './two-way-data/child/child.component';
+import { SimpleService } from './simple-service/simple.service';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import { ChildComponent } from './two-way-data/child/child.component';
     ])
   ],
   providers: [
-    SimpleServiceComponent
+    SimpleServiceComponent,
+    SimpleService
   ],
   bootstrap: [AppComponent]
 })
