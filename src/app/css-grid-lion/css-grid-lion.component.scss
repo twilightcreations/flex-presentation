@@ -1,0 +1,95 @@
+.jigsaw-container {
+    display: grid;
+    // height: 860px;
+    // width: 860px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    //border: 1px solid red;
+    transition:all 1s;
+    margin:auto;
+    &.pads {
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        transition:all 1s;
+    }
+  }
+
+  $width: 100px;
+  .piece {
+      background-image: url(/assets/grid-lion/lion20.jpg);
+      background-size: 101.1%;
+      transition: all 1s;
+      
+  }
+  .piece1 {  background-image: url(/assets/grid-lion/lion13.jpg); }
+  .piece2 {  background-image: url(/assets/grid-lion/lion8.jpg); }
+  .piece3 {  background-image: url(/assets/grid-lion/lion14.jpg); }
+  .piece4 {  background-image: url(/assets/grid-lion/lion22.jpg); }
+  .piece5 {  background-image: url(/assets/grid-lion/lion9.jpg); }
+  .piece6 {  background-image: url(/assets/grid-lion/lion2.jpg); }
+  .piece7 {  background-image: url(/assets/grid-lion/lion10.jpg); }
+  .piece8 {  background-image: url(/assets/grid-lion/lion21.jpg); }
+  .piece9 {  background-image: url(/assets/grid-lion/lion23.jpg); }
+  .piece10 {  background-image: url(/assets/grid-lion/lion15.jpg); }
+  .piece11 {  background-image: url(/assets/grid-lion/lion3.jpg); }
+  .piece12 {  background-image: url(/assets/grid-lion/lion20.jpg); }
+  .piece13 {  background-image: url(/assets/grid-lion/lion4.jpg); }
+  .piece14 {  background-image: url(/assets/grid-lion/lion16.jpg); }
+  .piece15 {  background-image: url(/assets/grid-lion/lion24.jpg); }
+  .piece16 {  background-image: url(/assets/grid-lion/lion1.jpg); }
+  .piece17 {  background-image: url(/assets/grid-lion/lion25.jpg); }
+  .piece18 {  background-image: url(/assets/grid-lion/lion17.jpg); }
+  .piece19 {  background-image: url(/assets/grid-lion/lion7.jpg); }
+  .piece20 {  background-image: url(/assets/grid-lion/lion19.jpg); }
+  .piece21 {  background-image: url(/assets/grid-lion/lion5.jpg); }
+  .piece22 {  background-image: url(/assets/grid-lion/lion11.jpg); }
+  .piece23 {  background-image: url(/assets/grid-lion/lion18.jpg); }
+  .piece24 {  background-image: url(/assets/grid-lion/lion6.jpg); }
+  .piece25 {  background-image: url(/assets/grid-lion/lion12.jpg); }
+
+.piece1.properLocation { grid-area: 3/3/4/4; } 
+.piece2.properLocation { grid-area: 2/3/3/4; }
+.piece3.properLocation { grid-area: 3/4/4/5; }
+.piece4.properLocation { grid-area: 5/2/6/3; }
+.piece5.properLocation { grid-area: 2/4/3/5; }
+.piece6.properLocation { grid-area: 1/2/2/3; }
+.piece7.properLocation { grid-area: 2/5/3/6; }
+.piece8.properLocation { grid-area: 5/1/6/2; }
+.piece9.properLocation { grid-area: 5/3/6/4; }
+.piece10.properLocation { grid-area: 3/5/4/6; }
+.piece11.properLocation { grid-area: 1/3/2/4; }
+.piece12.properLocation { grid-area: 4/5/5/6; }
+.piece13.properLocation { grid-area: 1/4/2/5; }
+.piece14.properLocation { grid-area: 4/1/5/2; }
+.piece15.properLocation { grid-area: 5/4/6/5; }
+.piece16.properLocation { grid-area: 1/1/2/2; }
+.piece17.properLocation { grid-area: 5/5/6/6; }
+.piece18.properLocation { grid-area: 4/2/5/3; }
+.piece19.properLocation { grid-area: 2/2/3/3; }
+.piece20.properLocation { grid-area: 4/4/5/5; }
+.piece21.properLocation { grid-area: 1/5/2/6; }
+.piece22.properLocation { grid-area: 3/1/4/2; }
+.piece23.properLocation { grid-area: 4/3/5/4; }
+.piece24.properLocation { grid-area: 2/1/3/2; }
+.piece25.properLocation { grid-area: 3/2/4/3; }
+
+
+.piece.properLocation {
+    opacity: 1;
+    transition:all 1s;
+    position:relative;
+    width:auto;
+    height:auto;
+    left:0;
+    &:hover {
+        transform: scale(0.8);
+    }
+}
+.piece {
+    opacity: 0.5;
+    transition:all 1s;
+    position:absolute;
+    width:60px;
+    height:60px;
+    left:60px;
+}
