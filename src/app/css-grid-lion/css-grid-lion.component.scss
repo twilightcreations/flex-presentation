@@ -5,13 +5,13 @@
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     //border: 1px solid red;
-    transition:all 1s;
+    transition:all 0.5s;
     margin:auto;
     margin-top:10px;
     &.pads {
         grid-row-gap: 10px;
         grid-column-gap: 10px;
-        transition:all 1s;
+        transition:all 0.5s;
     }
   }
 
@@ -19,7 +19,7 @@
   .piece {
       background-image: url(/assets/grid-lion/lion20.jpg);
       background-size: 101.1%;
-      transition: all 1s;
+      transition: all 0.5s;
       
   }
   .piece1 {  background-image: url(/assets/grid-lion/lion13.jpg); }
@@ -77,19 +77,19 @@
 
 .piece.properLocation {
     opacity: 1;
-    transition:all 1s;
+    transition:all 0.5s;
     position:relative;
     width:auto;
     height:auto;
     left:0;
     top:0;
     &:hover {
-        transform: scale(0.8);
+        transform: scale(0.95);
     }
 }
 .piece {
     opacity: 0.5;
-    transition:all 1s;
+    transition:all 0.5s;
     position:absolute;
     width:100px;
     height:100px;
