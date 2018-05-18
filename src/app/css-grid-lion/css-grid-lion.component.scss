@@ -7,6 +7,7 @@
     //border: 1px solid red;
     transition:all 1s;
     margin:auto;
+    margin-top:10px;
     &.pads {
         grid-row-gap: 10px;
         grid-column-gap: 10px;
@@ -81,6 +82,7 @@
     width:auto;
     height:auto;
     left:0;
+    top:0;
     &:hover {
         transform: scale(0.8);
     }
@@ -89,7 +91,8 @@
     opacity: 0.5;
     transition:all 1s;
     position:absolute;
-    width:60px;
-    height:60px;
-    left:60px;
+    width:100px;
+    height:100px;
+    left:-120px;
+    top:0px;
 }

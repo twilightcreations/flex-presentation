@@ -1,8 +1,10 @@
+<div [ngStyle]="{'text-align': 'center'}">
 <div class="spacing" (click)="gPadding=!gPadding"  >Padding
 </div>
-<input type="text" text="" [(ngModel)]="theWidth">
+<input type="text" text="" [(ngModel)]="theWidth" [ngStyle]="{'width': '70px'}">
+</div>
 
-<div class="jigsaw-container" [ngClass]="gPadding ? 'pads':''" [ngStyle]="{'width': theWidth, 'height': theWidth}">
+<div class="jigsaw-container" [ngClass]="gPadding ? 'pads':''" [ngStyle]="{'width': theWidth, 'height': theWidth, 'position':'relative'}">
   <div class="piece piece1" (click)="lionShow1=!lionShow1"  [ngClass]="lionShow1 ? 'properLocation':''"></div>
   <div class="piece piece2" (click)="lionShow2=!lionShow2"  [ngClass]="lionShow2 ? 'properLocation':''"></div>
   <div class="piece piece3" (click)="lionShow3=!lionShow3"  [ngClass]="lionShow3 ? 'properLocation':''"></div>
