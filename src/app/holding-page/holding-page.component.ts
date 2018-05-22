@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HoldingPageComponent implements OnInit {
 
   jsfloat: boolean;
-
+  contacts: string;
+  
   constructor() { }
 
   ngOnInit() {
