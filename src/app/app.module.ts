@@ -33,6 +33,8 @@ import { TwoWayDataComponent } from './two-way-data/two-way-data.component';
 import { ChildComponent } from './two-way-data/child/child.component';
 import { SimpleService } from './simple-service/simple.service';
 import { CssGridLionComponent } from './css-grid-lion/css-grid-lion.component';
+import { NewsItemsComponent } from './news-items/news-items.component';
+import { NewsComponent } from './news-items/news/news.component';
 
 
 @NgModule({
@@ -66,6 +68,8 @@ import { CssGridLionComponent } from './css-grid-lion/css-grid-lion.component';
     TwoWayDataComponent,
     ChildComponent,
     CssGridLionComponent,
+    NewsItemsComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,6 +94,7 @@ import { CssGridLionComponent } from './css-grid-lion/css-grid-lion.component';
       { path: 'simple-service', component:SimpleServiceComponent },
       { path: 'using-ng-model', component:UsingNgModelComponent },
       { path: 'cssGridLion', component:CssGridLionComponent },
+      { path: 'news-items', component:NewsItemsComponent },
       { path: 'parent-child-dataflow-simple', component:ParentChildDataflowSimpleComponent },
       // this is a lazy loaded module i.e a file loaded when user navigates to to-do-list2 url
       // This is a way to create a sub feature in an application to improve performance (by reducing the initial bundle)
