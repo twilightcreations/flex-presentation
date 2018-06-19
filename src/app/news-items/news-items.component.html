@@ -1,8 +1,16 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-news></app-news>
-      <app-news></app-news>
+
+      <app-news 
+      *ngFor="let news of newsFeed"
+      [newsImageBlockClass]=news.newsImageBlockClass
+      [newsLink]=news.newsLink
+      [newsTitle]=news.name
+      [newsSubText]=news.subText
+      [newsMainText]=news.mainText
+      ></app-news>
     </div>
   </div>
 </div>
+

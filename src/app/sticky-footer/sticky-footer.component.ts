@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class StickyFooterComponent implements OnInit {
 
   constructor() { }
-  moreText: boolean = true;
+  moreText:boolean = true;
  
   ngOnInit() {
   }

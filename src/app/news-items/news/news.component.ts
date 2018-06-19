@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-news',
@@ -19,4 +19,12 @@ export class NewsComponent implements OnInit {
   handleoff() {
     this.hovered = false;
   }
+
+
+  @Input() newsImageBlockClass:string;
+  @Input() newsLink:string;
+  @Input() newsTitle:string;
+  @Input() newsSubText:string;
+  @Input() newsMainText:string;
+  
 }

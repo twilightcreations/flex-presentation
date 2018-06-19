@@ -1,7 +1,7 @@
-<div class="item" (mouseover)="handleover()" (mouseout)="handleoff()" [ngClass]="hovered ? 'over':''" >
-  <div class="image-container"> 
-    <div class="image-block block1" [ngClass]="hovered ? 'over':''">
-      <div class="ghost-block" >
+<div class="item" (mouseover)="handleover()" (mouseout)="handleoff()" [ngClass]="hovered ? 'over':''" routerLink="{{newsLink}}">
+  <div class="image-container">
+    <div class="image-block {{newsImageBlockClass}}" [ngClass]="hovered ? 'over':''">
+      <div class="ghost-block">
         <div class="view"></div>
       </div>
 
@@ -9,11 +9,10 @@
 
   </div>
   <div class="text-container">
-    <h2 class="title">NASA's Curiosity Rover Is Tracking</h2>
-    <p class="sub-text">NASA's Curiosity rover is keeping tabs on the huge Martian dust storm that has sidelined its older cousin on the other side of the planet.</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium est a non impedit.
-      <a href="#" routerLink="">read more...</a>
+    <h2 class="title">{{newsTitle}}</h2>
+    <p class="sub-text">{{newsSubText}}</p>
+    <p>{{newsMainText}}
+      <a>read more...</a>
     </p>
 
 
