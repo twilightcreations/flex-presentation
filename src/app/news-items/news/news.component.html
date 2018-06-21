@@ -1,20 +1,18 @@
 <div class="item" (mouseover)="handleover()" (mouseout)="handleoff()" [ngClass]="hovered ? 'over':''" routerLink="{{newsLink}}">
   <div class="image-container">
-    <div class="image-block {{newsImageBlockClass}}" [ngClass]="hovered ? 'over':''">
-      <div class="ghost-block">
-        <div class="view"></div>
-      </div>
+    <div class="image-block {{newsImageBlockClass}}" [ngClass]="hovered ? 'over':''" 
+    [ngStyle]="{ 'background-image':'url(' + newsImgUrl + ')' }"
+    >
 
+        <!-- style="background-image: url(/assets/news-items/news1.jpg)" -->
     </div>
-
   </div>
   <div class="text-container">
+
     <h2 class="title">{{newsTitle}}</h2>
     <p class="sub-text">{{newsSubText}}</p>
     <p>{{newsMainText}}
       <a>read more...</a>
     </p>
-
-
   </div>
 </div>

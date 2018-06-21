@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-news',
+  selector: '[app-news]',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.scss']
 })
@@ -20,7 +20,7 @@ export class NewsComponent implements OnInit {
     this.hovered = false;
   }
 
-
+  @Input() newsImgUrl:string;
   @Input() newsImageBlockClass:string;
   @Input() newsLink:string;
   @Input() newsTitle:string;

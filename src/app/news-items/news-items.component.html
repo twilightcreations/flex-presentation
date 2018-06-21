@@ -1,16 +1,29 @@
+<div class="news-overlay" [ngClass]="status ? 'open' : ''"  >
+    <div class="box">
+      <p (click)="status=!status">Close</p>
+      <h2>{{hoverName}}</h2>
+      <p>{{hoverSubText}}</p>
+      <div class="image"><img src="{{imgUrl}}" alt=""></div>
+      <p>{{hoverMainText}}</p>
+    </div>
+  </div>
+
 <div class="container">
   <div class="row">
     <div class="col">
 
-      <app-news 
-      *ngFor="let news of newsFeed"
-      [newsImageBlockClass]=news.newsImageBlockClass
-      [newsLink]=news.newsLink
-      [newsTitle]=news.name
-      [newsSubText]=news.subText
-      [newsMainText]=news.mainText
-      ></app-news>
+      <div class="item-container">
+        <div  app-news  class="item-block"         
+        *ngFor="let news of newsFeed" 
+        (click)="status=!status"
+        (click)="selectNewsItem(news)"
+        [newsImgUrl]=news.imageUrl 
+        [newsImageBlockClass]=news.newsImageBlockClass 
+        [newsLink]=news.newsLink
+        [newsTitle]=news.name 
+        [newsSubText]=news.subText 
+        [newsMainText]=news.mainText></div>
+      </div>
     </div>
   </div>
 </div>
-

@@ -35,6 +35,7 @@ import { SimpleService } from './simple-service/simple.service';
 import { CssGridLionComponent } from './css-grid-lion/css-grid-lion.component';
 import { NewsItemsComponent } from './news-items/news-items.component';
 import { NewsComponent } from './news-items/news/news.component';
+import { ReadNewsComponent } from './news-items/read-news/read-news.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { NewsComponent } from './news-items/news/news.component';
     CssGridLionComponent,
     NewsItemsComponent,
     NewsComponent,
+    ReadNewsComponent,
   ],
   imports: [
     BrowserModule,
